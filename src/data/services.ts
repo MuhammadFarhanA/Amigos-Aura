@@ -1,0 +1,93 @@
+import {
+  Code,
+  Building2,
+  ShoppingCart,
+  Shield,
+  Palette,
+  Cloud,
+  Database,
+  LineChart,
+  Users,
+  Handshake,
+  Sparkles
+} from 'lucide-react';
+
+export const servicesData = [
+  {
+    icon: Code,
+    title: 'Core Software Development Services',
+    description: 'Full-stack development, custom software solutions, web and mobile app development with modern frameworks. Build scalable, secure, and high-performance applications tailored to your business needs.',
+    slug: 'core-software-development',
+    href: '/services/core-software-development',
+  },
+  {
+    icon: Building2,
+    title: 'Digital Transformation & Enterprise Solutions',
+    description: 'Enterprise software modernization, system integration, and digital transformation strategies. Modernize legacy systems and optimize business processes for the digital age.',
+    slug: 'digital-transformation',
+    href: '/services/digital-transformation',
+  },
+  {
+    icon: ShoppingCart,
+    title: 'B2B Marketing & Commerce Tools',
+    description: 'B2B eCommerce platforms, marketing automation, CRM development, and lead generation tools. Drive growth with intelligent commerce and marketing solutions.',
+    slug: 'b2b-marketing-commerce',
+    href: '/services/b2b-marketing-commerce',
+  },
+  {
+    icon: Shield,
+    title: 'Cybersecurity & Compliance',
+    description: 'Advanced security solutions, compliance management, penetration testing, and risk assessment. Protect your business with enterprise-grade security measures.',
+    slug: 'cybersecurity-compliance',
+    href: '/services/cybersecurity-compliance',
+  },
+  {
+    icon: Palette,
+    title: 'UI/UX and Product Design',
+    description: 'User-centered design, design systems, prototyping, and brand experiences. Create intuitive, engaging interfaces that delight users and drive conversions.',
+    slug: 'ui-ux-design',
+    href: '/services/ui-ux-design',
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud, DevOps & Infrastructure Services',
+    description: 'Cloud migration, infrastructure automation, CI/CD pipelines, and container orchestration. Build scalable, resilient cloud infrastructure with AWS, Azure, and GCP.',
+    slug: 'cloud-devops',
+    href: '/services/cloud-devops',
+  },
+  {
+    icon: Database,
+    title: 'Data & Analytics Services',
+    description: 'Big data engineering, business intelligence, data warehousing, and predictive analytics. Turn data into actionable insights that drive strategic decisions.',
+    slug: 'data-analytics',
+    href: '/services/data-analytics',
+  },
+  {
+    icon: LineChart,
+    title: 'AI & Machine Learning Solutions',
+    description: 'AI strategy, machine learning model development, natural language processing, and intelligent automation. Leverage AI to transform your business operations.',
+    slug: 'ai-machine-learning',
+    href: '/services/ai-machine-learning',
+  },
+  {
+    icon: Users,
+    title: 'Consulting & Outsourcing Services',
+    description: 'IT consulting, staff augmentation, dedicated development teams, and project management. Scale your capabilities with expert technical resources.',
+    slug: 'consulting-outsourcing',
+    href: '/services/consulting-outsourcing',
+  },
+  {
+    icon: Handshake,
+    title: 'White-Label & Partnership Services',
+    description: 'White-label software solutions, reseller programs, and strategic technology partnerships. Expand your offerings with ready-made solutions under your brand.',
+    slug: 'white-label-partnership',
+    href: '/services/white-label-partnership',
+  },
+  {
+    icon: Sparkles,
+    title: 'Additional B2B Value Services',
+    description: 'Quality assurance, technical documentation, training programs, and ongoing support. Comprehensive services to ensure long-term success and operational excellence.',
+    slug: 'additional-b2b-services',
+    href: '/services/additional-b2b-services',
+  },
+];

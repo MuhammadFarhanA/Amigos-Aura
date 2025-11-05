@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aa-primary-dark: #062E6B;
+  --aa-primary: #0A2164;
+  --aa-blue-primary: #0150AC;
+  --aa-blue-bright: #007ED5;
+  --aa-blue-light: #00ADEF;
+  --aa-cyan: #15CED4;
+  --aa-cyan-light: #60E6FF;
+}
+
+@layer components {
+  .gradient-hero {
+    background: linear-gradient(135deg, #0A2164 0%, #0150AC 25%, #007ED5 50%, #00ADEF 75%, #15CED4 100%);
+  }
+  
+  .gradient-subtle {
+    background: linear-gradient(135deg, #0150AC 0%, #007ED5 50%, #00ADEF 100%);
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .card-shadow-hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-primary {
+    @apply bg-aa-blue-primary hover:bg-aa-blue-bright text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-aa-cyan hover:border-aa-cyan-light text-aa-cyan hover:text-aa-cyan-light font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:-translate-y-0.5;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #0150AC 0%, #007ED5 50%, #00ADEF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Improved readability for text colors */
+  .aa-primary {
+    color: #374151; /* Better contrast gray-700 */
+  }
+  
+  .aa-primary-dark {
+    color: #062E6B;
+  }
+  
+  .aa-blue-primary {
+    color: #0150AC;
+  }
+  
+  .aa-blue-bright {
+    color: #007ED5;
+  }
+  
+  .aa-cyan {
+    color: #15CED4;
+  }
+  
+  .aa-cyan-light {
+    color: #60E6FF;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.2s ease-out;
+  }
+}
