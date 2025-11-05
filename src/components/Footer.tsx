@@ -38,11 +38,11 @@ const Footer = () => {
           <div className="lg:col-span-5 bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform transition-transform duration-300">
             <Link to="/" className="flex items-center space-x-3 mb-6">
               <motion.img
-                src="/assets/logo.jpg"
+                src="/assets/mini.jpg"
                 alt="Amigos Aura Logo"
                 whileHover={{ rotate: 5, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="w-12 h-12 rounded-2xl object-cover"
+                className="w-12 h-13 rounded-xl object-cover"
               />
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">Amigos Aura</span>
             </Link>
