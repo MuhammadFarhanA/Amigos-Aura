@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import PageLayout from '../components/templates/PageLayout';
 import Card from '../components/Card';
 import StatGrid from '../components/molecules/StatGrid';
-import TeamTreeNode from '../components/TeamTreeNode';
+import TeamCard from '../components/TeamCard';
 import { teamHierarchy, companyValues } from '../data/team';
 import { companyStats } from '../data/company';
 
@@ -82,7 +82,7 @@ const About = () => {
 
       {/* Team Section */}
       <section className="mb-20">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-3xl lg:text-4xl font-bold text-aa-primary-dark mb-4"
           >
-            Meet Our Team
+            Meet Our Leadership
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -99,12 +99,18 @@ const About = () => {
             viewport={{ once: true }}
             className="text-lg text-gray-700 mb-6"
           >
-            Our organizational structure and leadership
+            The visionaries and experts driving our success
           </motion.p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          <TeamTreeNode member={teamHierarchy} isRoot={true} />
+        <div className="max-w-6xl mx-auto space-y-8">
+          <TeamCard member={teamHierarchy} isCEO={true} index={0} />
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {teamHierarchy.reports?.map((member, index) => (
+              <TeamCard key={index} member={member} index={index + 1} />
+            ))}
+          </div>
         </div>
       </section>
 
