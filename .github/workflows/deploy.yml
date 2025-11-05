@@ -1,0 +1,34 @@
+name: Deploy to Hostinger via FTP
+
+on:
+  push:
+    branches:
+      - main  # or 'master' if that's your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # --- OPTIONAL: if your project needs a build (React, Angular, etc.)
+      - name: Build project
+        run: |
+          npm install
+          npm run build
+      # If you have a plain HTML/CSS site, remove the above block entirely.
+
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Deploy to Hostinger
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          # If you have a React/Vite/Angular app, the built files are usually in 'build' or 'dist'
+          # Adjust the folder name accordingly.
+          lftp -e "set ssl:verify-certificate no; mirror -R build /public_html; quit" -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST
