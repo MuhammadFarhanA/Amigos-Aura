@@ -39,11 +39,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="mb-20">
-        <StatGrid stats={companyStats} />
-      </section>
-
       {/* Values Section */}
       <section className="mb-20">
         <div className="text-center mb-12">
