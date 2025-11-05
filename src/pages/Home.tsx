@@ -24,7 +24,7 @@ const Home = () => {
           >
             <source src="/assets/2278095-hd_1920_1080_30fps.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-aa-blue-primary/95 via-aa-blue-bright/90 to-aa-cyan/85"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -34,16 +34,16 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 Build. Ship. Scale.
               </h1>
-              <p className="text-2xl lg:text-3xl text-white mb-4 font-semibold drop-shadow-lg">
+              <p className="text-2xl lg:text-3xl text-white mb-4 font-semibold drop-shadow-xl">
                 Design. Develop. Deploy. Your Digital Success
               </p>
-              <p className="text-lg lg:text-xl text-gray-100 mb-4 font-medium drop-shadow-md">
+              <p className="text-lg lg:text-xl text-white mb-4 font-medium drop-shadow-lg">
                 ⚡ Fast • 🤝 Friendly • ☕ Occasionally Caffeinated
               </p>
-              <p className="text-xl lg:text-2xl text-gray-100 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+              <p className="text-xl lg:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
                 Custom Software, Cloud, and AI Solutions That Drive Digital Transformation.
               </p>
             </motion.div>
