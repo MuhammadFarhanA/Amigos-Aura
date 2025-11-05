@@ -19,7 +19,7 @@ const Footer = () => {
         {/* Funky Header Section */}
         <div className="text-center mb-16">
           <div className="mb-8">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-aa-cyan via-aa-blue-light to-aa-cyan-light bg-clip-text text-transparent ">
+            <h2 className=" text-4xl font-bold mb-4 bg-gradient-to-r from-aa-cyan via-aa-blue-light to-aa-cyan-light bg-clip-text text-transparent pb-1">
               Let's Build Something Epic! 🚀
             </h2>
             <div className="flex items-center justify-center gap-2 text-lg text-blue-200">
@@ -132,7 +132,7 @@ const Footer = () => {
             </div>
             
             {/* Social Links with Funky Hover Effects */}
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {[
                 { icon: Twitter, color: 'hover:text-blue-400', bg: 'hover:bg-blue-400/20' },
                 { icon: Linkedin, color: 'hover:text-blue-500', bg: 'hover:bg-blue-500/20' },
@@ -148,7 +148,7 @@ const Footer = () => {
                   <Icon className="w-5 h-5" />
                 </motion.a>
               ))}
-            </div>
+            </div> */}
           </div>
 
         </div>
