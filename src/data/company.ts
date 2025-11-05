@@ -62,7 +62,7 @@ export const whyChooseUsData = [
 export const contactInfo = {
   address: 'Civic Centre, Mian Plaza, Block D2, Office Number 1\nJohar Town, Lahore, Pakistan 54782',
   phone: '+36205895495',
-  email: 'info@amigosoverseaseducation.com',
+  email: 'ceo@amigosaura.com',
 };
 
 export const responseTimeInfo = [

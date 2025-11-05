@@ -19,7 +19,7 @@ const Footer = () => {
         {/* Funky Header Section */}
         <div className="text-center mb-16">
           <div className="mb-8">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-aa-cyan via-aa-blue-light to-aa-cyan-light bg-clip-text text-transparent">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-aa-cyan via-aa-blue-light to-aa-cyan-light bg-clip-text text-transparent ">
               Let's Build Something Epic! 🚀
             </h2>
             <div className="flex items-center justify-center gap-2 text-lg text-blue-200">
@@ -35,7 +35,7 @@ const Footer = () => {
         {/* Zigzag Layout */}
         <div className="grid lg:grid-cols-12 gap-8 items-start">
           {/* Company Info - Diagonal Card */}
-          <div className="lg:col-span-5 bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div className="lg:col-span-5 bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform transition-transform duration-300">
             <Link to="/" className="flex items-center space-x-3 mb-6">
               <motion.div 
                 whileHover={{ rotate: 360, scale: 1.1 }}
