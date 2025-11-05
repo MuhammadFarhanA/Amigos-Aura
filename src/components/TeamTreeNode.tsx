@@ -24,28 +24,32 @@ const TeamTreeNode: React.FC<TeamTreeNodeProps> = ({ member, isRoot = false }) =
           className={`${
             isRoot
               ? 'bg-gradient-to-br from-aa-blue-primary via-aa-cyan to-aa-blue-bright text-white shadow-2xl border-2 border-white w-full max-w-md mx-auto'
-              : 'bg-white hover:shadow-xl border border-gray-100 w-full'
+              : 'bg-white hover:shadow-xl border border-gray-100 w-full max-w-sm mx-auto'
           } transition-all duration-300`}
         >
-          <div className="flex flex-col items-center text-center p-2">
-            <div className="flex-shrink-0 mb-3">
-              <div className={`rounded-2xl p-1 ${isRoot ? 'bg-white/20' : 'bg-gradient-subtle'}`}>
+          <div className="flex flex-col items-center text-center p-6">
+            <div className="flex-shrink-0 mb-4">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                className={`rounded-2xl overflow-hidden ${isRoot ? 'ring-4 ring-white/30' : 'ring-2 ring-aa-cyan/20'} shadow-lg`}
+              >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className={`${isRoot ? 'w-20 h-20' : 'w-16 h-16'} rounded-xl object-cover`}
+                  className={`${isRoot ? 'w-32 h-32' : 'w-28 h-28'} object-cover`}
                 />
-              </div>
+              </motion.div>
             </div>
 
             <div>
-              <h3 className={`${isRoot ? 'text-lg' : 'text-base'} font-bold mb-1 ${isRoot ? 'text-white' : 'text-aa-primary-dark'}`}>
+              <h3 className={`${isRoot ? 'text-xl' : 'text-lg'} font-bold mb-2 ${isRoot ? 'text-white' : 'text-aa-primary-dark'}`}>
                 {member.name}
               </h3>
-              <p className={`text-xs font-semibold mb-2 ${isRoot ? 'text-blue-100' : 'text-aa-blue-primary'}`}>
+              <p className={`text-sm font-semibold mb-3 ${isRoot ? 'text-blue-100' : 'text-aa-blue-primary'}`}>
                 {member.role}
               </p>
-              <p className={`text-xs leading-relaxed ${isRoot ? 'text-blue-50' : 'text-gray-600'} `}>
+              <p className={`text-sm leading-relaxed ${isRoot ? 'text-blue-50' : 'text-gray-600'}`}>
                 {member.bio}
               </p>
             </div>
