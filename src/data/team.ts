@@ -10,37 +10,37 @@ export const teamHierarchy: TeamMember = {
   name: 'Hussain Awan',
   role: 'Chairman-CEO',
   bio: 'Visionary leader driving innovation and growth at Amigos Aura with extensive experience in software development and business strategy.',
-  image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+  image: 'assets/hussain.jpg',
   reports: [
     {
       name: 'Muhammad Asim',
       role: 'Head of Marketing',
       bio: 'Strategic marketing leader focused on brand growth, digital presence, and client acquisition strategies.',
-      image: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'assets/asim.jpg',
     },
     {
       name: 'Imran Pervaiz',
       role: 'E-Commerce Director / Head of Marketplace Operations',
       bio: 'Expert in e-commerce platforms, marketplace development, and scaling digital commerce solutions.',
-      image: 'https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'assets/imran.png',
     },
     {
       name: 'Huzaifa Akram',
       role: 'Operations Manager',
       bio: 'Operational excellence specialist ensuring smooth project delivery and client satisfaction.',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'assets/huzaifa.png',
     },
     {
       name: 'Zubair Hussain',
       role: 'Game Development Team Lead',
       bio: 'Leading game development initiatives with expertise in game engines, mechanics, and interactive experiences.',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'assets/zubair.jpg',
     },
     {
       name: 'Fahad Butt',
       role: 'Lead AI Developer / AI Team Lead',
       bio: 'AI and machine learning expert driving innovation in artificial intelligence solutions and automation.',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: 'assets/fahad.jpg',
     },
   ],
 };

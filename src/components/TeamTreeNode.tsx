@@ -45,7 +45,7 @@ const TeamTreeNode: React.FC<TeamTreeNodeProps> = ({ member, isRoot = false }) =
               <p className={`text-xs font-semibold mb-2 ${isRoot ? 'text-blue-100' : 'text-aa-blue-primary'}`}>
                 {member.role}
               </p>
-              <p className={`text-xs leading-relaxed ${isRoot ? 'text-blue-50' : 'text-gray-600'} line-clamp-3`}>
+              <p className={`text-xs leading-relaxed ${isRoot ? 'text-blue-50' : 'text-gray-600'} `}>
                 {member.bio}
               </p>
             </div>
