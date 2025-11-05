@@ -22,7 +22,7 @@ const Home = () => {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="https://cdn.coverr.co/videos/coverr-digital-transformation-4729/1080p.mp4" type="video/mp4" />
+            <source src="/assets/2278095-hd_1920_1080_30fps.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-br from-aa-blue-primary/90 via-aa-cyan/85 to-aa-blue-bright/90"></div>
         </div>
