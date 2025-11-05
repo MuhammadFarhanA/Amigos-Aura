@@ -24,7 +24,7 @@ const Home = () => {
           >
             <source src="/assets/2278095-hd_1920_1080_30fps.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 bg-gradient-to-br from-aa-blue-primary/90 via-aa-cyan/85 to-aa-blue-bright/90"></div>
+          <div className="absolute inset-0 bg-black/60"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -34,16 +34,16 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
                 Build. Ship. Scale.
               </h1>
-              <p className="text-2xl lg:text-3xl text-white mb-4 font-semibold">
+              <p className="text-2xl lg:text-3xl text-white mb-4 font-semibold drop-shadow-lg">
                 Design. Develop. Deploy. Your Digital Success
               </p>
-              <p className="text-lg lg:text-xl text-blue-100 mb-4 font-medium">
+              <p className="text-lg lg:text-xl text-gray-100 mb-4 font-medium drop-shadow-md">
                 ⚡ Fast • 🤝 Friendly • ☕ Occasionally Caffeinated
               </p>
-              <p className="text-xl lg:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl lg:text-2xl text-gray-100 mb-12 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
                 Custom Software, Cloud, and AI Solutions That Drive Digital Transformation.
               </p>
             </motion.div>
@@ -75,55 +75,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Trust Indicators */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <motion.h2
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-3xl lg:text-4xl font-bold aa-primary-dark mb-6"
-            >
-              Trusted by ambitious companies worldwide
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-lg aa-primary max-w-3xl mx-auto"
-            >
-              We've helped startups to Fortune 500s build, deploy, and scale world-class digital products.
-            </motion.p>
-          </div>
-          
-          <StatGrid stats={companyStats} className="mb-16" />
-
-          {/* Badge Row */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.6 }}
-            transition={{ duration: 0.8, staggerChildren: 0.1 }}
-            viewport={{ once: true }}
-            className="flex flex-wrap justify-center items-center gap-8"
-          >
-            {['AWS Partner', 'Azure Certified', 'SOC 2 Type II', 'ISO 27001', 'Google Cloud', 'React Experts'].map((badge, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, rotate: -10 }}
-                whileInView={{ opacity: 1, rotate: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg px-6 py-3 shadow-sm"
-              >
-                <span className="text-sm font-medium aa-primary">{badge}</span>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
 
       {/* Services Overview Section */}
       <section className="py-20 bg-white">
