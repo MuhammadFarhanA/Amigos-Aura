@@ -38,7 +38,7 @@ const Footer = () => {
           <div className="lg:col-span-5 bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform transition-transform duration-300">
             <Link to="/" className="flex items-center space-x-3 mb-6">
               <motion.img
-                src="/assets/mini.jpg"
+                src="/assets/mini.png"
                 alt="Amigos Aura Logo"
                 whileHover={{ rotate: 5, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
