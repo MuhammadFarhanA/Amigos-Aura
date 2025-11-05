@@ -15,9 +15,9 @@ const TeamCard: React.FC<TeamCardProps> = ({ member, isCEO = false, index }) => 
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className={`group ${isCEO ? 'col-span-full' : ''}`}
+      className={`group h-full ${isCEO ? 'col-span-full' : ''}`}
     >
-      <div className={`relative overflow-hidden rounded-2xl ${
+      <div className={`relative overflow-hidden rounded-2xl h-full ${
         isCEO
           ? 'bg-gradient-to-br from-aa-blue-primary via-aa-cyan to-aa-blue-bright shadow-2xl'
           : 'bg-white shadow-lg hover:shadow-2xl'
