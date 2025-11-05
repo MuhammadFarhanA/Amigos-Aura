@@ -37,13 +37,17 @@ const Footer = () => {
           {/* Company Info - Diagonal Card */}
           <div className="lg:col-span-5 bg-white/10 backdrop-blur-sm rounded-3xl p-8 transform transition-transform duration-300">
             <Link to="/" className="flex items-center space-x-3 mb-6">
-              <motion.img
-                src="/assets/mini.jpg"
-                alt="Amigos Aura Logo"
+              <motion.div
                 whileHover={{ rotate: 5, scale: 1.1 }}
                 transition={{ duration: 0.5 }}
-                className="w-12 h-13 rounded-xl object-cover"
-              />
+                className="bg-white/20 backdrop-blur-sm p-2 rounded-xl border border-white/30"
+              >
+                <img
+                  src="/assets/mini.jpg"
+                  alt="Amigos Aura Logo"
+                  className="w-10 h-10 rounded-lg object-cover"
+                />
+              </motion.div>
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">Amigos Aura</span>
             </Link>
             <p className="text-blue-100 leading-relaxed mb-6 text-lg">
