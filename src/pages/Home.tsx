@@ -47,7 +47,7 @@ const Home = () => {
                 Custom Software, Cloud, and AI Solutions That Drive Digital Transformation.
               </p>
             </motion.div>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mx-auto">
+            {/* <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ const Home = () => {
                   Get a Proposal
                 </Button>
               </motion.div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -31,11 +31,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/assets/logo.jpg"
+              src="/assets/logo.png"
               alt="Amigos Aura Logo"
-              className="w-10 h-10 rounded-lg object-cover"
+              className="h-10 rounded-lg object-cover"
             />
-            <span className="text-xl font-bold aa-primary-dark">Amigos Aura</span>
+            
           </Link>
 
           {/* Desktop Navigation */}
