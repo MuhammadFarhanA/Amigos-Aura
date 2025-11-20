@@ -47,8 +47,9 @@ const Services = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
+            
           >
-            <Button>Schedule a Consultation</Button>
+            <Button className='mx-auto'>Schedule a Consultation</Button>
           </motion.div>
         </div>
       </motion.div>

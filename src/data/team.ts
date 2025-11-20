@@ -9,7 +9,7 @@ export interface TeamMember {
 export const teamHierarchy: TeamMember = {
   name: 'Hussain Awan',
   role: 'Chairman-CEO',
-  bio: 'Visionary leader driving innovation and growth at Amigos Aura with extensive experience in software development and business strategy.',
+  bio: 'Visionary leader driving innovation and growth at Amigos Aura with extensive expertise in business strategy and organizational leadership.',
   image: 'assets/hussain.jpg',
   reports: [
     {
@@ -41,6 +41,12 @@ export const teamHierarchy: TeamMember = {
       role: 'Lead AI Developer / AI Team Lead',
       bio: 'AI and machine learning expert driving innovation in artificial intelligence solutions and automation.',
       image: 'assets/fahad.jpg',
+    },
+    {
+      name: 'Muhammad Farhan Atif',
+      role: 'UI/UX Design and Frontend Lead',
+      bio: 'Experienced UI/UX designer and frontend lead specializing in building accessible, responsive, and performant interfaces. Leads design systems, component architecture, and cross-functional collaboration to deliver user-centered, pixel-perfect products.',
+      image: 'assets/farhan.jpg',
     },
   ],
 };
