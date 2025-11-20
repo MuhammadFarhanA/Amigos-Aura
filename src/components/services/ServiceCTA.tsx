@@ -25,10 +25,12 @@ const ServiceCTA: React.FC<ServiceCTAProps> = ({
         <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
           {description}
         </p>
-        <Button variant="outline" size="lg">
-          Schedule a Consultation
-          <ArrowRight className="w-5 h-5" />
-        </Button>
+        <a href="/contact">
+          <Button variant="outline" size="lg" className='mx-auto'>
+            Schedule a Consultation
+            <ArrowRight className="w-5 h-5" />
+          </Button>
+        </a>
       </div>
     </motion.div>
   );

@@ -49,7 +49,7 @@ const Services = () => {
             viewport={{ once: true }}
             
           >
-            <Button className='mx-auto'>Schedule a Consultation</Button>
+            <a href="/contact"><Button className='mx-auto'>Schedule a Consultation</Button></a>
           </motion.div>
         </div>
       </motion.div>
