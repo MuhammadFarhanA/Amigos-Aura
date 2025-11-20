@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="text-center mb-16">
           <div className="mb-8">
             <h2 className=" text-4xl font-bold mb-4 bg-gradient-to-r from-aa-cyan via-aa-blue-light to-aa-cyan-light bg-clip-text text-transparent pb-1">
-              Let's Build Something Epic! 🚀
+              Let's Build Something! 🚀
             </h2>
             <div className="flex items-center justify-center gap-2 text-lg text-blue-200">
               <span>⚡ Fast</span>
