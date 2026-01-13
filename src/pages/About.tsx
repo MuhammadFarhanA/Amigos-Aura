@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -59,7 +59,7 @@ const About = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <section className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
