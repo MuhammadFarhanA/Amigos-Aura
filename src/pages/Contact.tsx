@@ -12,6 +12,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
     type: 'success' | 'error' | null;
