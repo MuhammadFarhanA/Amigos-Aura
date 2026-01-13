@@ -13,6 +13,7 @@ interface ServiceDetailProps {
   benefits: string[];
   features: string[];
   useCases: string[];
+  imageUrl?: string;
 }
 
 const ServiceDetailPage: React.FC<ServiceDetailProps> = ({
@@ -23,6 +24,7 @@ const ServiceDetailPage: React.FC<ServiceDetailProps> = ({
   benefits,
   features,
   useCases,
+  imageUrl,
 }) => {
   return (
     <PageLayout title={title} subtitle={description}>
@@ -33,9 +35,25 @@ const ServiceDetailPage: React.FC<ServiceDetailProps> = ({
           transition={{ duration: 0.6 }}
           className="flex items-center justify-center mb-12"
         >
-          <div className="w-24 h-24 bg-gradient-subtle rounded-2xl flex items-center justify-center">
-            <Icon className="w-12 h-12 text-aa-blue-primary" />
-          </div>
+          {imageUrl ? (
+            <div className="relative w-full max-w-4xl h-80 rounded-3xl overflow-hidden">
+              <img
+                src={imageUrl}
+                alt={title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 backdrop-blur-sm" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center px-6">
+                  {title}
+                </h1>
+              </div>
+            </div>
+          ) : (
+            <div className="w-24 h-24 bg-gradient-subtle rounded-2xl flex items-center justify-center">
+              <Icon className="w-12 h-12 text-aa-blue-primary" />
+            </div>
+          )}
         </motion.div>
 
         <motion.div

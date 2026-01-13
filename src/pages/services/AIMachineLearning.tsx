@@ -16,6 +16,7 @@ const AIMachineLearning = () => {
       benefits={details.benefits}
       features={details.features}
       useCases={details.useCases}
+      imageUrl={service.imageUrl}
     />
   );
 };

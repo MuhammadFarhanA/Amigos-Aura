@@ -19,6 +19,7 @@ export const servicesData = [
     description: 'Full-stack development, custom software solutions, web and mobile app development with modern frameworks. Build scalable, secure, and high-performance applications tailored to your business needs.',
     slug: 'core-software-development',
     href: '/services/core-software-development',
+    imageUrl: 'https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Building2,
@@ -26,6 +27,7 @@ export const servicesData = [
     description: 'Enterprise software modernization, system integration, and digital transformation strategies. Modernize legacy systems and optimize business processes for the digital age.',
     slug: 'digital-transformation',
     href: '/services/digital-transformation',
+    imageUrl: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: ShoppingCart,
@@ -33,6 +35,7 @@ export const servicesData = [
     description: 'B2B eCommerce platforms, marketing automation, CRM development, and lead generation tools. Drive growth with intelligent commerce and marketing solutions.',
     slug: 'b2b-marketing-commerce',
     href: '/services/b2b-marketing-commerce',
+    imageUrl: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Shield,
@@ -40,6 +43,7 @@ export const servicesData = [
     description: 'Advanced security solutions, compliance management, penetration testing, and risk assessment. Protect your business with enterprise-grade security measures.',
     slug: 'cybersecurity-compliance',
     href: '/services/cybersecurity-compliance',
+    imageUrl: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Palette,
@@ -47,6 +51,7 @@ export const servicesData = [
     description: 'User-centered design, design systems, prototyping, and brand experiences. Create intuitive, engaging interfaces that delight users and drive conversions.',
     slug: 'ui-ux-design',
     href: '/services/ui-ux-design',
+    imageUrl: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Cloud,
@@ -54,6 +59,7 @@ export const servicesData = [
     description: 'Cloud migration, infrastructure automation, CI/CD pipelines, and container orchestration. Build scalable, resilient cloud infrastructure with AWS, Azure, and GCP.',
     slug: 'cloud-devops',
     href: '/services/cloud-devops',
+    imageUrl: 'https://images.pexels.com/photos/2881224/pexels-photo-2881224.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Database,
@@ -61,6 +67,7 @@ export const servicesData = [
     description: 'Big data engineering, business intelligence, data warehousing, and predictive analytics. Turn data into actionable insights that drive strategic decisions.',
     slug: 'data-analytics',
     href: '/services/data-analytics',
+    imageUrl: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: LineChart,
@@ -68,6 +75,7 @@ export const servicesData = [
     description: 'AI strategy, machine learning model development, natural language processing, and intelligent automation. Leverage AI to transform your business operations.',
     slug: 'ai-machine-learning',
     href: '/services/ai-machine-learning',
+    imageUrl: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Users,
@@ -75,6 +83,7 @@ export const servicesData = [
     description: 'IT consulting, staff augmentation, dedicated development teams, and project management. Scale your capabilities with expert technical resources.',
     slug: 'consulting-outsourcing',
     href: '/services/consulting-outsourcing',
+    imageUrl: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Handshake,
@@ -82,6 +91,7 @@ export const servicesData = [
     description: 'White-label software solutions, reseller programs, and strategic technology partnerships. Expand your offerings with ready-made solutions under your brand.',
     slug: 'white-label-partnership',
     href: '/services/white-label-partnership',
+    imageUrl: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
   {
     icon: Sparkles,
@@ -89,5 +99,6 @@ export const servicesData = [
     description: 'Quality assurance, technical documentation, training programs, and ongoing support. Comprehensive services to ensure long-term success and operational excellence.',
     slug: 'additional-b2b-services',
     href: '/services/additional-b2b-services',
+    imageUrl: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1920',
   },
 ];
