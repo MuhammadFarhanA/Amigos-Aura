@@ -26,6 +26,7 @@ const UIUXDesign = () => {
           title={service.title}
           subtitle={content.subtitle}
           description={content.longDescription}
+          imageUrl={service.imageUrl}
         />
 
         <div className="space-y-8">
